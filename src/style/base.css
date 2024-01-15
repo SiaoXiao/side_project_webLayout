@@ -1,0 +1,9 @@
+@layer base {
+  html {
+    @apply font-sans relative w-full max-w-[1920px] min-h-screen m-auto;
+  }
+
+  main {
+    @apply w-full h-full;
+  }
+}
