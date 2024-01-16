@@ -16,7 +16,13 @@ export default defineConfig(({ command, mode, ssrBuild }) => {
     plugins: [
       Vue(),
       Components(),
-      AutoImport()
+      AutoImport({
+        imports: ['vue',],
+        dts: './auto-import.d.ts',
+        eslintrc: {
+          enabled: false
+        }
+      })
     ],
   }
 })
