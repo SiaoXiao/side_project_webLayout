@@ -9,7 +9,7 @@
 
 
 <h2>
-<a href="https://spa-furry-project-cross-night.vercel.app/">
+<a href="https://side-project-web-layout.vercel.app/">
  demo here
 </a>
 </h2>
