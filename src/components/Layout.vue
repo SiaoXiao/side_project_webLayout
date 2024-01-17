@@ -1,10 +1,6 @@
 <template>
-  <div class="flex flex-col min-h-screen md:flex-row">
+  <div class="wrap">
     <WebMenu />
     <WebContainer />
   </div>
 </template>
-
-<script setup></script>
-
-<style lang="scss" scoped></style>

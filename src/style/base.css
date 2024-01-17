@@ -2,8 +2,4 @@
   html {
     @apply font-noto-sans relative w-full max-w-[1440px] min-h-screen m-auto;
   }
-
-  main {
-    @apply w-full h-full;
-  }
 }

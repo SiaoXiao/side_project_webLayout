@@ -6,7 +6,6 @@ import path from 'path'
 
 export default defineConfig(({ command, mode, ssrBuild }) => {
   return {
-    // base: '/side_project_Mall_new/',
     base: './',
     resolve: {
       alias: {
@@ -17,12 +16,15 @@ export default defineConfig(({ command, mode, ssrBuild }) => {
       Vue(),
       Components(),
       AutoImport({
-        imports: ['vue',],
+        imports: ['vue'],
         dts: './auto-import.d.ts',
         eslintrc: {
           enabled: false
         }
       })
     ],
+    server: {
+      open: true
+    }
   }
 })

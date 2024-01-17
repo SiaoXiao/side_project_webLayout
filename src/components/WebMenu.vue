@@ -3,7 +3,7 @@
     class="relative z-20 flex flex-col justify-between flex-shrink-0 w-full bg-white md:w-[345px] md:fixed md:inset-y-0"
   >
     <div
-      class="flex items-center justify-between h-[87px] md:h-auto md:py-[78px] md:justify-center md:shadow-none pr-[18px] pl-[26px]"
+      class="relative flex items-center justify-between h-[87px] md:h-auto md:py-[78px] md:justify-center md:shadow-none pr-[18px] pl-[26px]"
       :class="showMenu ? '' : 'shadow-custom'"
     >
       <button
@@ -15,7 +15,10 @@
       <div class="flex items-center justify-center">
         <span class="text-xl font-bold md:text-3xl">白頭翁不吃小米</span>
       </div>
-      <div class="w-[48px] h-[48px] bg-white rounded-full shadow-logo"></div>
+      <!-- Logo -->
+      <div
+        class="static w-12 h-12 bg-white rounded-full md:-right-12 md:absolute md:w-24 md:h-24 shadow-logo"
+      ></div>
     </div>
     <div
       class="flex-grow md:flex md:flex-col md:justify-between"
@@ -42,8 +45,9 @@ const menuItems = reactive([
   { to: '/', text: '白頭翁的特性', isActive: true },
   { to: '/', text: '白頭翁的故事', isActive: false },
   { to: '/', text: '白頭翁的美照', isActive: false },
-  { to: '/', text: '白頭翁的危機', isActive: false },
+  { to: '/', text: '白頭翁的危機', isActive: false }
 ])
+
 const toggleMenu = () => (showMenu.value = !showMenu.value)
 
 const handleMediaQueryChange = (e) => {

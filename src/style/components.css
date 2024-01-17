@@ -1,0 +1,5 @@
+@layer components {
+  .wrap {
+      @apply flex flex-col min-h-screen md:flex-row;
+  }
+}
