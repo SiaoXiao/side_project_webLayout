@@ -2,4 +2,7 @@
   .wrap {
       @apply flex flex-col min-h-screen md:flex-row;
   }
+  .flex-center{
+    @apply flex items-center justify-center
+  }
 }
