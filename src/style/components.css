@@ -6,6 +6,6 @@
     @apply flex items-center justify-center
   }
   .card{
-    @apply flex h-[225px] max-w-[274px] w-full gap-9
+    @apply flex min-h-[225px] max-w-[274px] w-full gap-9
   }
 }

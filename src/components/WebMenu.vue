@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative z-20 flex flex-col justify-between flex-shrink-0 w-full bg-white md:w-[345px] md:fixed md:inset-y-0"
+    class="relative z-20 flex flex-col justify-between flex-shrink-0 w-full bg-white md:w-[345px] order-1"
   >
     <div
       class="relative flex items-center justify-between h-[87px] md:h-auto md:py-[78px] md:justify-center md:shadow-none pr-[18px] pl-[26px]"

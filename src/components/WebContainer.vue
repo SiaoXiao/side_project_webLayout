@@ -1,23 +1,23 @@
 <template>
-  <div
-    class="relative z-10 flex-grow min-w-0 md:pl-[345px] flex flex-col-reverse bg-center bg-no-repeat bg-cover bg-none md:bg-banner"
-  >
-    <div class="">
-      <div
-        class="flex flex-col justify-end h-full bg-center bg-no-repeat bg-cover md:h-auto py-9 px-11 aspect-square md:aspect-auto md:bg-none bg-banner"
-      >
-        <h1 class="text-5xl font-bold text-right text-white">白頭翁 (Chinese bulbul)</h1>
-        <span class="block mt-1 text-lg text-right text-white"
-          >又名白頭鵯。以果實、昆蟲為主食，無法消化小米、穀類。平均壽命約 8~10 年。</span
-        >
+  <div class="relative z-10 order-2 w-full">
+    <!-- 上 -->
+    <div
+      class="relative bg-no-repeat bg-cover bg-center bg-banner md:min-h-[70vh] aspect-square md:aspect-auto"
+    >
+      <div class="absolute bottom-0 left-0 right-0">
+        <div class="flex flex-col py-9 px-11">
+          <h1 class="text-5xl font-bold text-right text-white">白頭翁 (Chinese bulbul)</h1>
+          <span class="block mt-1 text-lg text-right text-white"
+            >又名白頭鵯。以果實、昆蟲為主食，無法消化小米、穀類。平均壽命約 8~10 年。</span
+          >
+        </div>
       </div>
-      <div
-        class="bg-[#DCCCBC] flex flex-col flex-wrap md:flex-row items-center justify-around h-full md:h-[367px] py-[50px] px-[36px] gap-[50px] md:gap-3 md:px-[50px] sm-py-[58px]"
-      >
-        <template v-for="item in itemData" :key="item.id">
-          <WebItem :itemData="item" />
-        </template>
-      </div>
+    </div>
+    <!-- 下 -->
+    <div class="bg-[#DCCCBC] grid justify-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-[50px] pt-[58px] gap-[50px] md:gap-5">
+      <template v-for="item in itemData" :key="item.id">
+        <WebItem :itemData="item" />
+      </template>
     </div>
   </div>
 </template>
