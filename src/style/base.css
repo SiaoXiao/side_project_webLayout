@@ -1,5 +1,5 @@
 @layer base {
   html {
-    @apply font-noto-sans relative w-full max-w-[1440px] min-h-screen m-auto;
+    @apply relative w-full max-w-[1440px] min-h-screen m-auto;
   }
 }

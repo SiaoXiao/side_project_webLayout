@@ -4,3 +4,9 @@
 
 @import "base";
 @import "components";
+
+:root {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
+  font-display: swap;
+}
